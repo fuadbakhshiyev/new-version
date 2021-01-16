@@ -106,6 +106,7 @@ li {
   color: rgb(255, 255, 255);
 }
 
+
 .navigation {
   display: flex;
   align-items: center;
@@ -181,7 +182,9 @@ li {
     font-size: 3rem;
     padding: 1rem;
     cursor: pointer;
+    
   }
+ 
 
   .cart-icon {
     display: block;
@@ -270,7 +273,7 @@ li {
 
 .btn {
   display: inline-block;
-  background-color: #fc7c7c;
+  background-color: #F63E02;
   padding: 1.2rem 4rem;
   color: #fff;
   font-weight: 600;
@@ -694,6 +697,11 @@ li {
 }
 
 @media only screen and (max-width: 768px) {
+  .close img{
+    transform: rotate(180deg);
+    color: white;
+  }
+
   .brands-center {
     grid-template-columns: repeat(3, 1fr);
   }
