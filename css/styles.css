@@ -62,7 +62,9 @@ li {
 
 
 
-
+.container-md {
+  max-width: 100rem;
+  margin: 0 auto;}
 
 @media only screen and (max-width: 1200px) {
   .container {
