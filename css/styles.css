@@ -10,14 +10,12 @@
   --purple: #561f83;
   --blue: #1c3264;
 
-    --Abel:'Abel', cursive;
-    --Anton:'Anton', cursive;
-    --Josefin:'Josefin', cursive;
-    --Lexend:'Lexend', cursive;
-    --Livvic:'Livvic', cursive;
+
     --Mons:'Montserrat',cusive;
     --Monsa:'Montserrat Alternates',cursive;
-    --Poppins:'Poppins',cursive;
+    --Pop:'Poppins',cursive;
+    --Nun:'Nunito',cursive;
+    --Pros:'Prosto One',cursive;
 }
 
 
@@ -50,7 +48,7 @@ h2,
 h3,
 h4 {
   font-weight: 500;
-  font-family: var(--Poppins);
+  font-family: var(--Pop);
 }
 
 a {
@@ -98,7 +96,8 @@ li {
 
 .nav {
   padding: 1.6rem 0;
-  font-family: var(--Mons);
+  font-family: var(--Pop);
+  font-weight: 600;
 }
 
 .nav.fix-nav {
@@ -109,6 +108,7 @@ li {
   background-color:var(--purple);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   z-index: 999;
+  font-weight: 600;
 }
 
 .nav.fix-nav .nav-link:hover{
@@ -131,6 +131,8 @@ li {
 
 .logo h1 {
   font-size: 2.5rem;
+  font-family: var(--Pros);
+  font-weight: 500;
 }
 
 .nav-list {
@@ -297,7 +299,8 @@ li {
   text-transform: uppercase;
   margin-top: 3rem;
   border-radius: 5px;
-  font-family: var(--Poppins);
+  font-family: var(--Mons);
+  font-weight: 800;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -423,6 +426,7 @@ li {
 .advert-box .content h2,
 .advert-box .content h4 {
   text-shadow: 5px 6px 0px rgba(37, 59, 112, 0.1);
+
 }
 
 .advert-box .content h2 {
@@ -435,6 +439,8 @@ li {
 .advert-box .content h4 {
   font-size: 1.5rem;
   text-transform: capitalize;
+  font-family: var(--Mons);
+  font-weight: 500;
 }
 
 /* Featured Products */
@@ -508,6 +514,7 @@ li {
 
 .product-footer h3 {
   font-size: 2.2rem;
+  font-family: var(--Mons);
 }
 
 
@@ -516,6 +523,8 @@ li {
 .product-footer .price {
   color: var(--orange);
   font-size: 2rem;
+  font-family: var(--Monsa);
+  font-weight: 500;
 }
 
 .product:hover .product-header::after {
@@ -962,10 +971,12 @@ th {
   color: #fff;
   background-color: var(--orange);
   font-weight: normal;
+  font-family: var(--Mons);
 }
 
 td {
   padding: 1rem 0.5rem;
+  font-family: var(--Monsa);
 }
 
 td input {
@@ -1149,6 +1160,10 @@ section.contactme{
   padding-bottom: 0;
   height: 400px;
 }
+.contact-info span,a{
+  font-family: var(--Mons);
+  
+}
 section.contactme .contact-info-wrapper {
   padding:4rem 0;
   flex:1;
@@ -1216,11 +1231,13 @@ section.contactme .contact-info > div > div > div span:first-child{
   background:#473e52;
   color:var(--white);
   text-align: center;
-  border-top: 2px solid  orangered ;
+  font-family: var(--Mons);
+  border-top: 2px solid  var(--orange) ;
 }
 .copyright a{
   color:var(--orange);
   text-decoration: none;
+  font-family: var(--Pop);
 }
 section.fast3step{
   background: linear-gradient(
@@ -1238,6 +1255,7 @@ section.fast3step{
 }
 .steps span{
   font-size: 15px;
+  
 }
 section.fast3step .threestep{
   display:flex;
@@ -1262,9 +1280,9 @@ section.fast3step .threestep div{
   justify-content: center;
 }
 section.fast3step .threestep div span:first-child{
-  font-family: var(--Mons);
+  font-family: var(--Monsa);
   font-size:2.5rem;
-  font-weight: 100;
+  font-weight: 400;
   color:white;
   margin-bottom:0.05rem;
   font-size: 25px;
