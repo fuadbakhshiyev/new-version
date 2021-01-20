@@ -1,8 +1,10 @@
-
+:root{
+    --Mons:'Montserrat',cusive;
+}
 body, 
 input,
 textarea {
-    font-family: "Poppins", sans-serif;
+    font-family:var(--Mons); 
 }
 
 .socialicons {

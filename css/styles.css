@@ -7,9 +7,19 @@
   --grey-alt: #d1e2e9;
   --yellow: #ffd800;
   --green: #59b210;
-  --purple: #4e1b79;
+  --purple: #561f83;
   --blue: #1c3264;
+
+    --Abel:'Abel', cursive;
+    --Anton:'Anton', cursive;
+    --Josefin:'Josefin', cursive;
+    --Lexend:'Lexend', cursive;
+    --Livvic:'Livvic', cursive;
+    --Mons:'Montserrat',cusive;
+    --Monsa:'Montserrat Alternates',cursive;
+    --Poppins:'Poppins',cursive;
 }
+
 
 *,
 *::before,
@@ -26,7 +36,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  
   font-size: 1.6rem;
   font-weight: 400;
   background-color:var(--white);
@@ -40,6 +50,7 @@ h2,
 h3,
 h4 {
   font-weight: 500;
+  font-family: var(--Poppins);
 }
 
 a {
@@ -87,6 +98,7 @@ li {
 
 .nav {
   padding: 1.6rem 0;
+  font-family: var(--Mons);
 }
 
 .nav.fix-nav {
@@ -99,6 +111,9 @@ li {
   z-index: 999;
 }
 
+.nav.fix-nav .nav-link:hover{
+  color: var(--orange);
+}
 .nav.fix-nav .nav-link,
 .nav.fix-nav .logo,
 .nav.fix-nav .cart-icon,
@@ -111,6 +126,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: var(--Monsa);
 }
 
 .logo h1 {
@@ -120,6 +136,9 @@ li {
 .nav-list {
   display: flex;
   align-items: center;
+}
+.nav-item:hover{
+  color: var(--orange);
 }
 
 .nav-item:not(:last-child) {
@@ -278,6 +297,7 @@ li {
   text-transform: uppercase;
   margin-top: 3rem;
   border-radius: 5px;
+  font-family: var(--Poppins);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -345,12 +365,14 @@ li {
 /* Adverts */
 .section {
   padding: 10rem 0 5rem 0;
+  font-family: var(--Mons);
 }
 
 .advert-center {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 3rem;
+  font-family: var(--Monsa);
 }
 
 .advert-box {
@@ -627,91 +649,7 @@ li {
   }
 }
 
-/* Testimonials */
-.testimonial-center {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 6rem;
-}
 
-.testimonial {
-  position: relative;
-  padding: 5rem;
-  background-color: #fff;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
-  transition: all 300ms ease-in-out;
-  text-align: center;
-  border-radius: 0.5rem;
-}
-
-.testimonial:hover {
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
-  transform: translateY(-1rem);
-}
-
-.testimonial span {
-  position: absolute;
-  top: 2%;
-  left: 50%;
-  font-size: 12rem;
-  font-family: sans-serif;
-  color: #ff7c9c;
-  line-height: 1;
-  transform: translate(-50%, 0);
-}
-
-.testimonial p {
-  margin: 2rem 0 1rem 0;
-}
-
-.testimonial .rating {
-  margin-bottom: 1rem;
-}
-
-.testimonial .img-cover {
-  border-radius: 50%;
-  width: 8rem;
-  height: 8rem;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-.testimonial .img-cover img {
-  height: 100%;
-  object-fit: cover;
-}
-
-.testimonial h4 {
-  margin-top: 1rem;
-}
-
-/* Brands */
-.brands-center {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 3rem;
-}
-
-.brand {
-  height: 8rem;
-  width: 8rem;
-  margin: 0 auto;
-}
-
-.brand img {
-  object-fit: contain;
-}
-
-@media only screen and (max-width: 768px) {
-  .close img{
-    transform: rotate(180deg);
-    color: white;
-  }
-
-  .brands-center {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 
 /* ========= Footer ======== */
 .footer {
@@ -776,7 +714,7 @@ li {
 }
 
 .all-products .top select {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--Mons);
   width: 20rem;
   padding: 1rem;
   border: 1px solid #ccc;
@@ -907,7 +845,7 @@ form span {
 }
 
 .product-detail .right select {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--Mons);
   width: 20rem;
   padding: 0.7rem;
   border: 1px solid #ccc;
@@ -1107,7 +1045,7 @@ section.subscribe{
   background:#ffffff;
 }
 section.subscribe .newsletter > div:first-child img{
-  width:90%;
+  width:100%;
 }
 section.subscribe .newsletter div:first-child{
   flex:1;
@@ -1117,7 +1055,7 @@ section.subscribe .newsletter div:last-child{
 }
 
 section.subscribe h1{
-  font-family:"Poppins";
+  font-family:var(--Mons);
   font-size: 2rem;
   margin-bottom:1.5rem;
   text-align: center;
@@ -1125,7 +1063,7 @@ section.subscribe h1{
   margin-right: 5%;
 }
 section.subscribe p{
-  font-family:"Poppins"; 
+  font-family:var(--Mons); 
   font-size: 1.5rem;
   margin-bottom:1.5rem;
   line-height: 1.5;
@@ -1237,12 +1175,12 @@ section.contactme .contact-info > div > div > div{
   flex-direction: column;
 }
 section.contactme .contact-info > div > div > div span:first-child{
-  font-family: "Raleway-bold";
+  font-family:var(--Mons);
   margin-bottom:0.25rem;
 }
 
 .section-head{
-  font-family:"Raleway-bold";
+  font-family:var(--Mons);
   text-align:center;
   font-size: 30px;
   Position:relative;
@@ -1293,8 +1231,14 @@ section.fast3step{
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+ 
 }
-
+.steps img{
+  width: 50%;
+}
+.steps span{
+  font-size: 15px;
+}
 section.fast3step .threestep{
   display:flex;
   align-items: center;
@@ -1304,7 +1248,7 @@ section.fast3step .threestep{
 }
 section.fast3step .threestep div{
   margin:2rem;
-  background: orangered;
+  background:var(--orange);
   width:150px;
   height:150px;
   border-radius: 50%;
@@ -1318,14 +1262,18 @@ section.fast3step .threestep div{
   justify-content: center;
 }
 section.fast3step .threestep div span:first-child{
-  font-family: "Raleway-semibold";
+  font-family: var(--Mons);
   font-size:2.5rem;
+  font-weight: 100;
   color:white;
   margin-bottom:0.05rem;
+  font-size: 25px;
 }
 section.fast3step .threestep div span:last-child{
-  font-family: "Raleway-medium";
-  color:white;
+  font-family: var(--Mons);
+  color:rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 @media( max-width:536px){
@@ -1345,7 +1293,7 @@ section.fast3step .threestep div span:last-child{
 }
 
 .section-heading{
-  font-family:"Raleway-bold";
+  font-family:var(--Mons);
   text-align:center;
   Position:relative;
   margin-bottom:6rem;
