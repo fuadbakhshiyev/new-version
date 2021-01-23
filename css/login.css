@@ -259,6 +259,14 @@ span{
 .right-panel .content {
   transform: translateX(800px);
 }
+.backpurfange.a{
+  margin-top: 0;
+
+}
+.purfangelink{
+  text-decoration: none;
+  color: white;
+}
 
 /* ANIMATION */
 
