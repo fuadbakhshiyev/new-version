@@ -126,7 +126,6 @@ a {
     padding: .7rem;
     cursor: pointer;
     border-radius: .5rem;
-    cursor: pointer;
     transform: scale(0);
     transition: .5s ease-in-out; }
     .sociallist div:nth-child(1) {

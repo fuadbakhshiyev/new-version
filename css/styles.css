@@ -44,7 +44,7 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   background-color:var(--white);
-  color: var(--puronge);
+  color: var(--blue);
   position: relative;
   z-index: 1;
 }
@@ -261,6 +261,7 @@ transform: translate(0, -50%);
   display: inline-block;
   position: relative;
   z-index: 0;
+  color: black;
 }
 .title h1::after {
   content: "";
@@ -307,6 +308,7 @@ transform: translate(0, -50%);
 }
 .product-footer {
   padding: 2rem 1.6rem 1.6rem 1.6rem;
+  color: rgb(27, 22, 22);
 }
 .product-footer h3 {
   font-size: 2.2rem;
@@ -684,6 +686,7 @@ section.subscribe h1{
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
+  color: black;
 }
 section.subscribe p{
   font-family:var(--Mons); 
@@ -693,6 +696,7 @@ section.subscribe p{
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
+  color: black;
 }
 section.subscribe .input-wrap{
   background:var(--grey-alt);
@@ -743,10 +747,10 @@ section.contactme{
   padding-top:0;
   padding-bottom: 0;
   height: 400px;
+  color: rgb(59, 33, 33);
 }
 .contact-info span,a{
   font-family: var(--Mons);
-
 }
 section.contactme .contact-info-wrapper {
   padding:4rem 0;
@@ -783,6 +787,7 @@ section.contactme .contact-info > div > div > div span:first-child{
   font-size: 30px;
   Position:relative;
   margin-bottom:6rem;
+  color: black;
 }
 .section-head:after{
   content:'';

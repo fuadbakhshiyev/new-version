@@ -8,16 +8,51 @@ textarea {
     font-family:var(--Mons); 
 }
 
-.socialicons {
-
-    margin-top: 35px;
-    margin-left: 2rem;
+.sociallist {
+    
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+    transition-delay: 1.2s; 
+}
+.sociallist div{
+    margin: 0 .5rem;
+    padding: .7rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
 }
 
-.socialicons img{
-    margin: 0.5rem;
+.sociallist div img {
+    font-size: 1.5rem;
+    transition: .4s ease-in-out;
 }
+.iconback{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.facebook, .linkedin, .instagram, .twitter {
+    background-color: #cebbe4cb;
+}
+.sociallist div:hover img {
+    transform: scale(1.3); }
 
+.follow{
+    margin-bottom: 10%;
+}
+.followus{
+    
+    margin:10% 20%;
+}
 
 .information {
     display: flex;
@@ -75,7 +110,7 @@ form{
     font-weight: 500;
     font-size:2.5rem;
     line-height: 1;
-    margin-bottom: 3rem;
+    
     
 }
 .title1{
@@ -84,14 +119,22 @@ form{
     color: #4e1b79;
 }
 
+
 .text{
     text-align: center;
     font-size: 25px;
-    color: #4e1b79;
-    margin-bottom: 10px;
+    color: black;   
+  
 }
 .info{
     margin-top: 35px;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+    transition: .5s ease-in-out;
+    transition-delay: 1s;
 }
 .contacts{
     position: relative;
@@ -145,6 +188,7 @@ textarea .input{
     padding: 2.3rem 2.2rem;
     position: relative;
     background-color: #cebbe4cb;
+    
 }
 
 .contactinfo .title {
