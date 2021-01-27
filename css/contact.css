@@ -253,7 +253,7 @@ textarea .input{
         background-color: #4e1b79;
         padding: 1.2rem 4rem;
         color: white;
-        font-weight: 400;
+        font-weight: 600;
         font-size: 14px;
         text-transform: uppercase;
         border-radius: 10px;
@@ -265,9 +265,10 @@ textarea .input{
     
     background-image: linear-gradient(to right, #3a3269, #485563, #2b5876, #4e4376);
     box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.904);
-    transform: scale(1.009); 
+    transform: scale(1.18); 
     transition: 0.3s all ease-in-out;
     opacity: 0.98;cursor: pointer;
+    font-weight: 700;
 }
 @media (max-width: 727px){
     .contactform {

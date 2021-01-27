@@ -11,6 +11,7 @@
 --purple: #561f83;
 --puronge:#7B2CBF;
 --blue: #1c3264;
+
   /*---Fonts---*/
 --Mons:'Montserrat',cusive;
 --Monsa:'Montserrat Alternates',cursive;
@@ -19,6 +20,9 @@
 --Pros:'Prosto One',cursive;
 --Exo:'Exo' ,cursive;  
 }
+::selection{
+  color: var(--orange);
+  background-color:var(--white);}
 *,
 *::before,
 *::after {
@@ -105,6 +109,7 @@ li {
 .nav.fix-nav .hamburger {
   color:var(--white);
 }
+
 .navigation {
   display: flex;
   align-items: center;
@@ -115,6 +120,10 @@ li {
   font-family: var(--Monsa);
   font-weight: 800;
   letter-spacing: 1px;
+  transition: .3s all ease-in-out;
+}
+.logo h1:hover{
+  transform:scale(1.2)
 }
 .nav-list {
   display: flex;
@@ -122,6 +131,12 @@ li {
 }
 .nav-item:hover{
   color: var(--orange);
+}
+.nav-item img{
+  transition: .4s all ease-in-out;
+}
+.nav-item img:hover{
+  transform: scale(1.4);
 }
 .nav-item:not(:last-child) {
   margin-right: 0.5rem;
@@ -178,12 +193,16 @@ li {
   background-color: #F63E02;
   padding: 1.2rem 4rem;
   color: #fff;
-  font-weight: 600;
   text-transform: uppercase;
   margin-top: 3rem;
   border-radius: 5px;
   font-family: var(--Mons);
   font-weight: 800;
+  transition:.4s ease-in-out;
+}
+.btn:hover{
+  transform: scale(1.2);
+  font-size: 17px;
 }
 /* Adverts */
 .section {
@@ -503,11 +522,10 @@ form span {
   object-fit: contain;
   height: 100%;
   border-radius: 1rem;
-
+  transition: .4s all ease-in-out;
 }
 .product-detail .left .main img:hover{
   transform: scale(1.18); 
-  transition: 0.4s ease-in-out;
 }
 .product-detail .thumbnails {
   display: grid;
@@ -525,10 +543,10 @@ form span {
   height: 100%;
   border-radius: 1rem;
   object-fit: contain;
+  transition: 0.3s all ease-in-out;
 }
 .product-detail .thumbnail img:hover{
   transform: scale(1.08); 
-  transition: 0.3s all ease-in-out;
   opacity: 0.6;
 }
 .product-detail .right span {
@@ -585,7 +603,12 @@ form span {
   padding: 0.8rem 4rem;
   color: #fff;
   border-radius: 1.5rem;
+  transition: .3s all ease-in-out;
 }
+.product-detail .form .addCart:hover{
+  background-color: var(--purple);
+}
+
 .product-detail h3 {
   text-transform: uppercase;
   margin-bottom: 2rem;
@@ -657,6 +680,13 @@ th:last-child {
   height: 450px;
   padding:o 15px;
   margin:0 auto;
+}
+.imagepng{
+  transition: .4s all ease-in-out;
+  cursor: pointer;
+}
+.imagepng:hover{
+  transform: scale(1.1);
 }
 .flex{
   display:flex;
@@ -825,11 +855,15 @@ section.fast3step{
   background-attachment: fixed;
 }
 .steps img{
+  cursor: pointer;
   width: 50%;
+  transition: .3s all ease-in-out;
 }
 .steps span{
   font-size: 15px;
-
+}
+.steps img:hover{
+  transform: scale(1.2);
 }
 section.fast3step .threestep{
   display:flex;
