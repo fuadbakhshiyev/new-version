@@ -860,7 +860,7 @@ section.fast3step{
 }
 .steps img{
   cursor: pointer;
-  width: 50%;
+  width: 40%;
   transition: .3s all ease-in-out;
 }
 .steps span{
