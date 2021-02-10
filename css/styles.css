@@ -212,7 +212,7 @@ li {
 
 section.ship3step{
   background: linear-gradient(
-      rgba(35,43,56,0.9),
+      rgba(43, 51, 63, 0.9),
       rgba(35,43,56,0.9)
   ), url(../images/product/bulky/1.jpg);
   background-size: cover;
