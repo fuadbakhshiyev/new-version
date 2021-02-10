@@ -11,7 +11,6 @@
 --purple: #561f83;
 --puronge:#7B2CBF;
 --blue: #1c3264;
-
   /*---Fonts---*/
 --Mons:'Montserrat',cusive;
 --Monsa:'Montserrat Alternates',cursive;
@@ -123,7 +122,7 @@ li {
   transition: .3s all ease-in-out;
 }
 .logo h1:hover{
-  transform:scale(1.2)
+  color: var(--orange);
 }
 .nav-list {
   display: flex;
@@ -205,70 +204,75 @@ li {
   font-size: 17px;
 }
 /* Adverts */
+
 .section {
   padding: 10rem 0 5rem 0;
   font-family: var(--Mons);
 }
-.advert-center {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 3rem;
+
+section.ship3step{
+  background: linear-gradient(
+      rgba(35,43,56,0.9),
+      rgba(35,43,56,0.9)
+  ), url(../images/product/bulky/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.shipping img{
+  padding-top: 2rem;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+  width: 70%;
+}
+.shipping span{
+  font-size: 25px;
+  color: white;
+  font-weight: 700;
   font-family: var(--Monsa);
 }
-.advert-box {
-  position: relative;
-  color: #fff;
-  height: 27rem;
-  border-radius: 1rem;
-  padding: 1.6rem;
-  overflow: hidden;
-  z-index: 1;
+.shipping img:hover{
+  transform: scale(1.17);
 }
-.advert-box img {
-  position: absolute;
-  bottom: 0%;
-  left: -20%;
-  height: 100%;
-  width: 35rem;
-  z-index: -1;
-}  
-.advert-box:nth-child(1) {
-  background-color:var(--orange);
+section.ship3step .threeship{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:2rem;
 }
-.advert-box:nth-child(2) {
-  background-color: var(--grey-alt);
-}  
-.advert-box:nth-child(3) {
-  background-color:var(--purple);
-}  
-.advert-box .dotted {
-  position: relative;
-  height: 100%;
-  border: 2px dashed #f1f1f1;
-  border-radius: 1rem;
-}  
-.advert-box .content {
-position: absolute;
-top: 50%;
-right: 5%;
-transform: translate(0, -50%);
+section.ship3step .threeship div{
+  margin:5rem;
+  background:transparent;
+  width:200px;
+  height:200px;
+  border-radius: 10%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.advert-box .content h2,
-.advert-box .content h4 {
-  text-shadow: 5px 6px 0px rgba(37, 59, 112, 0.1);
-}  
-.advert-box .content h2 {
-  line-height: 1.2;
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+section.ship3step .threeship div span:first-child{
+  font-family: var(--Monsa);
+  font-size:2.5rem;
+  font-weight: 400;
+  color:white;
+  margin-bottom:0.05rem;
+  font-size: 25px;
 }
-.advert-box .content h4 {
-  font-size: 1.5rem;
-  text-transform: capitalize;
+section.ship3step .threeship div span:last-child{
   font-family: var(--Mons);
-  font-weight: 500;
-}
+  color:rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 20px;
+}  
+
+
+
+
+
+
+
 /* Featured Products */
 
 .title {
@@ -869,7 +873,6 @@ section.fast3step .threestep{
   display:flex;
   align-items: center;
   justify-content: center;
-  
   margin-bottom:2rem;
 }
 section.fast3step .threestep div{
@@ -977,6 +980,10 @@ section.fast3step .threestep div span:last-child{
       row-gap: 2rem;
       }
 } 
+@media only screen and (max-width: 828px){
+  section.ship3step .threeship{display: grid};
+}
+
   @media only screen and (max-width: 768px) {
   .menu {
       position: fixed;
@@ -1080,6 +1087,7 @@ section.fast3step .threestep div span:last-child{
   .product-banner .content a {
           padding: 1rem 3rem;
   }
+  
 }
   @media only screen and (max-width: 650px) {
   .product-detail .details {

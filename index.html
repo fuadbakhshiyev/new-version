@@ -4,27 +4,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Favicon -->
+      <!--- Favicon --->
   <link rel="shortcut icon" href="./images/icon/favicon.png" type="image/x-icon">
-  <!---Fonts-->
+      <!---- Fonts ---->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Prosto+One&display=swap" rel="stylesheet">
-  <!-- Custom StyleSheet -->
+      <!----  Custom StyleSheet ---->
   <link rel="stylesheet" href="./css/styles.css" />
   <title>Purfange</title>
 </head>
-
 <body onload="myFunction()">
   <div id="loading"></div>
-  <!-- Header -->
+        <!-- Header -->
   <header id="home" class="header">
-    <!-- Navigation -->
+        <!-- Navigation -->
     <nav class="nav">
       <div class="navigation container">
         <div class="logo">
           <a href="./index.html"><h1>Purfange</h1></a>
         </div>
-
         <div class="menu">
           <div class="top-nav">
             <div class="logo">
@@ -34,7 +32,6 @@
               <img src="./images/icon/bar-chartwhite.svg" alt="">
             </div>
           </div>
-
           <ul class="nav-list">
             <li class="nav-item">
               <a href="#home" class="nav-link scroll-link">Home</a>
@@ -49,8 +46,11 @@
               <a href="#Soon" class="nav-link">Soon</a>
             </li>
             <li class="nav-item">
-              <a href="#search" class="nav-link icon"><img src="./images/icon/searchorange.svg" alt=""></a>
+              <a href="#Sale" class="nav-link">Sale</a>
             </li>
+            <li class="nav-item">
+              <a href="#search" class="nav-link icon"><img src="./images/icon/searchorange.svg" alt=""></a>
+          </li>
             <li class="nav-item">
               <a href="login.html" class="nav-link icon"><img src="./images/icon/userorange.svg" alt=""></a>
             </li>
@@ -59,23 +59,22 @@
             </li>
           </ul>
         </div>
-        <a href="#" class="cart-icon">
-          <img src="./images/icon/searchorange.svg" alt="">
-        </a>
-        <a href="login.html" class="cart-icon">
-          <img src="./images/icon/userorange.svg" alt="">
-        </a>
-        <a href="cart.html" class="cart-icon">
-          <img src="./images/icon/shoppingbag.svg" alt="">
-        </a>
-        <div class="hamburger">
-          <img src="./images/icon/bxmenuclose.svg" alt="">
-        </div>
+          <a href="#" class="cart-icon">
+            <img src="./images/icon/searchorange.svg" alt="">
+          </a>
+          <a href="login.html" class="cart-icon">
+            <img src="./images/icon/userorange.svg" alt="">
+          </a>
+          <a href="cart.html" class="cart-icon">
+            <img src="./images/icon/shoppingbag.svg" alt="">
+          </a>
+          <div class="hamburger">
+            <img src="./images/icon/bxmenuclose.svg" alt="">
+          </div>
       </div>
     </nav>
-
-    <!-- Hero -->
-    <img src="./images/png-img/banner.png " alt="" class="hero-img" />
+        <!----- Hero ----->
+    <img src="./images/png-img/banner.png" alt="" class="hero-img" />
     <div class="hero-content">
       <h2><span class="discount">30% </span> SALE OFF</h2>
       <h1>
@@ -85,55 +84,36 @@
       <a class="btn" href="#">shop now</a>
     </div>
   </header>
-
-  <!-- Main -->
+        <!------ Main---- -->
   <main>
-    <section class="advert section">
-      <div class="advert-center container">
-        <div class="advert-box">
-          <div class="dotted">
-            <div class="content">
-              <h2>
-                Bulky 
-              </h2>
-              <h4>Best Seller</h4>
-            </div>
+    <section class="ship3step">
+      <div class="ship">
+          <h1 class="section-heading text-pure">Shipping</h1>
+          <div class="threeship">
+              <div class="shipping">
+                <span>3-5 Days </span>
+                <span>Order placed </span>
+                <img src="./images/icon/knittng.svg" alt="">
+              </div>
+              <div class="shipping">
+                <span>1-2 Days </span>
+                <span>Order ships </span>
+                <img src="./images/icon/delivery-truck.svg" alt="">
+              </div>
+              <div class="shipping">
+                <span>4-7 Days</span>
+                <span>Delivery</span>
+                <img src="./images/icon/package.svg" alt="">
+                
+              </div>
           </div>
-          <img src="./images/png-img/advert4.png" alt="">
-        </div>
-
-        <div class="advert-box">
-          <div class="dotted">
-            <div class="content">
-              <h2>
-                Decor
-              </h2>
-              <h4> Best Seller</h4>
-            </div>
-          </div>
-          <img src="./images/png-img/advert5.png" alt="">
-        </div>
-
-        <div class="advert-box">
-          <div class="dotted">
-            <div class="content">
-              <h2>
-                Puffy Fine 
-              </h2>
-              <h4> Best Seller</h4>
-            </div>
-          </div>
-          <img src="./images/png-img/advert6.png" alt="">
-        </div>
       </div>
-    </section>
-
-    <!-- Featured -->
+  </section>
+          <!---- Featured ---->
     <section class="section featured">
       <div class="title">
         <h1>Featured Products</h1>
       </div>
-
       <div class="product-center container">
         <div class="product">
           <div class="product-header">
