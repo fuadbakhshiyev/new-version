@@ -1,0 +1,160 @@
+:root {
+    /*color*/
+    --white: #fff;
+    --black: #222;
+    --orange: #f63E02;
+    --grey: #444;
+    --grey2: #959595;
+    --grey-alt: #d1e2e9;
+    --yellow: #ffd800;
+    --green: #59b210;
+    --purple: #561f83;
+    --puronge:#7B2CBF;
+    --blue: #1c3264;
+    /*---Fonts---*/
+    --Mons:'Montserrat',cusive;
+    --Monsa:'Montserrat Alternates',cursive;
+    --Pop:'Poppins',cursive;
+    --Nun:'Nunito',cursive;
+    --Pros:'Prosto One',cursive;
+    --Exo:'Exo' ,cursive;
+    }
+    ::selection{
+        color: var(--orange);
+        background-color:var(--white);}
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: white;
+    }
+    .nav{
+        background-color: white;
+    }
+    section{
+        padding: 0;
+        background-color: white;
+    }
+    .aboutmain{
+        background-image: url(../images/back/backabout.jpg);
+        background-repeat: no-repeat;
+    }
+    .abouthead{
+        text-align: center;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        padding: 5%;
+    }
+    .head-text{
+    text-align: center;
+    }
+    .footer-text{
+        padding-bottom: 2%;
+    }
+    .about-text{
+        flex: 0 0 auto;
+        width: 66.6%;
+        color:white;
+        font-family:var(--Mons) ;
+    }
+    .about-image{
+        flex: 0 0 auto;
+        width: 33.3%;
+        
+    }
+    h1{
+        font-size: 48px;
+        font-weight: 600;
+        padding: 5%;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .about-more{
+        text-align:center;
+        font-family: var(--Pop);
+        padding:  2%  2% 0 2%;
+        color: var(--blue);
+    }
+    .about-services{
+        color: var(--blue);
+        text-align: center;
+        font-family: var(--Pop);
+        padding: 1%;
+    }
+
+    .aboutservice{
+        background-color: white;
+        box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
+        margin: 1rem;
+        border-radius: 15px;
+        width: 280px;
+        height: 180px;
+        transition: all ease-in-out .3s;
+    }
+    .aboutservice:hover{
+        background-color: orangered;
+        box-shadow:0 1rem 2rem rgba(0, 0, 0, 0.233);
+    }
+    .aboutservice:hover .services-icon svg{
+        fill: var(--white);
+    }
+    .aboutservice:hover .services-text{color: white;}
+    .services-area{
+    margin: 2rem;
+    }
+    .services-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+    .services-icon{
+        
+        text-align: center;
+        color: orangered;
+    }
+    .services-icon svg{
+        fill: var(--orange);
+        width: 60px;
+        height: 60px;
+    }
+    .services-text{
+        color: var(--blue);
+        font-weight: 600;
+        font-size: 17px;
+        font-family: var(--Pop);
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    @media only screen and (max-width: 895px) {
+    .services-cont{
+        flex-wrap: wrap;
+    }
+    .aboutservices{
+        margin:2rem;
+    }
+    .about-services, .about-more{
+    padding: 0  10% 5%;
+    }
+    }
+    @media only screen and (max-width: 768px){
+        h1{
+            font-size: 30px;
+        }
+        .aboutservice{
+            width: 320px;
+            height: 200px;
+            transition: all ease-in-out .3s;
+        }
+        .abouthead{
+        display: flex;
+        flex-direction: column;
+        line-height: 1.3;
+    }
+    }
