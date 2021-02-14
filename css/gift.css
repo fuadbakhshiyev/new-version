@@ -1,0 +1,127 @@
+:root {
+    /*color*/
+  --white: #fff;
+  --black: #222;
+  --orange: #f63E02;
+  --grey: #444;
+  --grey2: #959595;
+  --grey-alt: #d1e2e9;
+  --yellow: #ffd800;
+  --green: #59b210;
+  --purple: #561f83;
+  --puronge:#7B2CBF;
+  --blue: #1c3264;
+    /*---Fonts---*/
+  --Mons:'Montserrat',cusive;
+  --Monsa:'Montserrat Alternates',cursive;
+  --Pop:'Poppins',cursive;
+  --Nun:'Nunito',cursive;
+  --Pros:'Prosto One',cursive;
+  --Exo:'Exo' ,cursive;  
+  }
+
+  body{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+  nav{
+      background-color: var(--white);
+  }
+  section{
+      background-color: var(--white);
+  }
+.head-text{
+    font-family: var(--Pop);
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--blue);
+    padding-bottom: 5%;
+}
+.brandname{
+    color: var(--purple);
+}
+.namegift{
+
+    color: var(--orange);
+}
+.gift-text-head{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--Mons);
+    padding: 2% 5% 4% 5%;
+}
+.imgheadgift{
+padding: .5% 30%;
+}
+
+.img2a{
+    width: 40%;
+    padding: 3%;
+}
+.imgandtext{
+    display: flex;
+}
+.gift-text-center{
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10%;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: var(--Mons);
+}
+.namegift1{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--orange);
+}
+@media only screen and (max-width: 1000px){
+    .head-text{
+        font-size: 30px;
+    }
+.imgheadgift{
+    padding: 10%;
+    margin-bottom: 5%;
+    width: 100%;
+    }
+    .imgandtext{
+        flex-direction: column;
+    }
+    .img2a{
+        padding: 10%;
+        margin:0%;width: 100%;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    .namegift1{
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .head-text{
+        font-size: 24px;
+    }
+    .namegift1{
+        font-size: 22px;
+
+    }
+}
+
+@media only screen and (max-width: 470px){
+    .head-text{
+        font-size: 20px;
+    }
+    .namegift1{
+        font-size: 18px;
+
+    }
+}
