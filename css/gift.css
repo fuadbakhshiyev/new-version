@@ -64,12 +64,6 @@ padding: .5% 30%;
     display: flex;
 }
 .gift-text-center{
-    justify-content: center;
-    align-self: center;
-    justify-self: center;
-    align-content: center;
-    align-items: center;
-    text-align: center;
     padding: 10%;
     font-size: 17px;
     font-weight: 400;
@@ -112,7 +106,6 @@ padding: .5% 30%;
     }
     .namegift1{
         font-size: 22px;
-
     }
 }
 
@@ -122,6 +115,5 @@ padding: .5% 30%;
     }
     .namegift1{
         font-size: 18px;
-
     }
 }
