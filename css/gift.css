@@ -43,7 +43,7 @@
     color: var(--purple);
 }
 .namegift{
-
+    text-align: center;
     color: var(--orange);
 }
 .gift-text-head{
@@ -58,13 +58,16 @@ padding: .5% 30%;
 
 .img2a{
     width: 40%;
-    padding: 3%;
+    padding: 2%;
 }
 .imgandtext{
     display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .gift-text-center{
-    padding: 10%;
+    padding: 5%;
+    padding-top: 7%;
     font-size: 17px;
     font-weight: 400;
     font-family: var(--Mons);

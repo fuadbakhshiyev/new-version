@@ -233,6 +233,7 @@ section.ship3step{
   font-family: var(--Monsa);
 }
 .shipping img:hover{
+  
   transform: scale(1.17);
 }
 section.ship3step .threeship{
