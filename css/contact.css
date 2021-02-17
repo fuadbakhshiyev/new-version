@@ -1,6 +1,17 @@
 :root{
     --Exo:'Exo',cursive;
     --Mons:'Montserrat',cusive;
+    --white: #fff;
+--black: #222;
+--orange: #f63E02;
+--grey: #444;
+--grey2: #959595;
+--grey-alt: #d1e2e9;
+--yellow: #ffd800;
+--green: #59b210;
+--purple: #561f83;
+--puronge:#7B2CBF;
+--blue: #1c3264;
 }
 body, 
 input,
@@ -194,6 +205,7 @@ textarea .input{
     padding: 2.3rem 2.2rem;
     position: relative;
     background-color: #cebbe4cb;
+    background-image: url(../images/back/contactus.jpg);
     
 }
 
@@ -242,17 +254,17 @@ textarea .input{
     font-size: 12px;
     top: -10px;
     background: #fff;
-    color:rgb(255, 72, 0); 
+    color:var(--orange); 
     padding: 0 8px;
     left: 12px;
 }
 
 .sendbtn{
         display: inline-block;
-        border: none;
-        background-color: #4e1b79;
+        border:none;
+        background-color: var(--purple);
         padding: 1.2rem 4rem;
-        color: white;
+        color: var(--white);
         font-weight: 600;
         font-size: 14px;
         text-transform: uppercase;
@@ -262,13 +274,9 @@ textarea .input{
         
 }
 .sendbtn:hover{
-    
-    background-image: linear-gradient(to right, #3a3269, #485563, #2b5876, #4e4376);
-    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.904);
-    transform: scale(1.18); 
+    background-color: var(--orange);
     transition: 0.3s all ease-in-out;
-    opacity: 0.98;cursor: pointer;
-    font-weight: 700;
+    cursor: pointer;
 }
 @media (max-width: 727px){
     .contactform {
