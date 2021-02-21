@@ -74,5 +74,10 @@ gsap.from(".ship h1", { opacity: 0, duration: 1, delay: 1, y: -45 ,x: -50 });
 gsap.from(".subtextemail", { opacity: 0, duration: 1, delay: 1, y: 45 ,x: 50 });
 gsap.from(".contact-info-wrapper", { opacity: 0, duration: 1, delay: 1, y: 45 ,x: 50 });
 
+gsap.from(".head-text", { opacity: 0, duration: 1, delay: 1, z: 90 , x:50});
+gsap.from(".footer-text", { opacity: 0, duration: 1.2, delay: 1, z: 90 , x:-50});
+gsap.from(".more-text", { opacity: 0, duration: 1.8, delay: 1, y: 0 ,x: -50 });
+gsap.from(".more-icon", { opacity: 0, duration: 1.6, delay: 1, z: 90 , x:50});
+
 
 
