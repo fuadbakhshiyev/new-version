@@ -471,6 +471,9 @@ margin-right: 1rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
+.mobilefooter{
+  display: none;
+}
 /* All Products */
 .section .top {
   display: flex;
@@ -993,6 +996,7 @@ section.fast3step .threestep div span:last-child{
       }
 } 
 @media only screen and (max-width: 828px){
+
   section.ship3step .threeship{display: grid};
 }
 
@@ -1147,10 +1151,7 @@ section.fast3step .threestep div span:last-child{
   .cart-info p {
       display: none;
   }
-  .footer-container {
-      grid-template-columns:150px 1fr ;
-      row-gap: 2rem;
-  }
+
   section.subscribe .newsletter{
       flex-direction: column;
       padding:0.50rem;
@@ -1165,7 +1166,58 @@ section.fast3step .threestep div span:last-child{
       flex-direction: column;
       padding:0.50rem;
   }
+
+      /*
+      
+  .footer-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer-center h3{
+    padding: 0 !important;
+    margin:0 !important;
+    font-size: 18px;
+  }
   
+.respofoo{
+    display: none;
+  }
+  */.section{ 
+    padding: 2rem 0 2rem 0;
+  }
+  .footer-container{
+    display: none;
+  }
+  .mobilefooter{
+    padding-top: 1.2rem;
+    display: flex;
+    color: var(--white);
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+.mobilefooter h3{
+  font-size: 16px;
+  font-weight: 300;
+  font-family: var(--Mons);
+}
+.mobilefooter h3:hover{
+  color: var(--orange);
+}
+.socialfooter{
+  padding-top: 1rem;
+}
+.socialfooter svg{
+  margin: 1rem;
+  transition: .3s all ease-in-out;
+}
+.socialfooter svg:hover{
+  color: var(--orange);
+}
 }
   @media( max-width:536px){
   section.fast3step .threestep {

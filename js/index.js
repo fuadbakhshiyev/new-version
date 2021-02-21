@@ -55,6 +55,13 @@ links.map(link => {
   });
 });
 
+////
+
+
+
+
+/////
+
 gsap.from(".logo", { opacity: 0, duration: 1, delay: 0.5, y: -10 });
 gsap.from(".hamburger", { opacity: 0, duration: 1, delay: 1, x: 20 });
 gsap.from(".hero-img", { opacity: 0, duration: 1, delay: 1.5, x: -200 });
@@ -65,4 +72,7 @@ gsap.from(".shipping span", { opacity: 0, duration: 1, delay: 1.5, x: -20 ,y: -5
 gsap.from(".steps span", { opacity: 0, duration: 1, delay: 1.5, x: -100 });
 gsap.from(".ship h1", { opacity: 0, duration: 1, delay: 1, y: -45 ,x: -50 });
 gsap.from(".subtextemail", { opacity: 0, duration: 1, delay: 1, y: 45 ,x: 50 });
+gsap.from(".contact-info-wrapper", { opacity: 0, duration: 1, delay: 1, y: 45 ,x: 50 });
+
+
 
